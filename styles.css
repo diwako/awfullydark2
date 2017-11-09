@@ -60,6 +60,14 @@ strong {
     border-top: 6px solid var(--accent);
 }
 
+.switch input[type=checkbox]:checked+.check.is-info {
+    background: var(--accent) !important;
+}
+
+.switch:focus input[type=checkbox]:checked+.check.is-info {
+    box-shadow: 0 0 0.5em var(--accent) !important;
+}
+
 
 /*===== Main Forum =====*/
 
