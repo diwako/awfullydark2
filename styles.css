@@ -223,15 +223,6 @@ body.page-forum .threadlistsection .threadblock.is-sticky {
 
 /*New Post indicator*/
 
-body.page-forum .threadlistsection .threadblock .threadmain a.newposts {
-    background-color: var(--accent);
-    color: var(--accent-text);
-}
-
-body.page-forum .threadlistsection .threadblock .threadmain a.newposts:hover {
-    background-color: var(--accent-hover);
-}
-
 
 /* Read thread with no new posts: gets a border to the left */
 
