@@ -91,7 +91,12 @@ strong {
 /*alert button */
 
 .navbar-alerts .alert-button {
+    color: var(--text-color);
+}
+
+.navbar-alerts .alert-button.has-alerts {
     color: var(--accent);
+    font-weight: bolder;
 }
 
 
@@ -276,6 +281,10 @@ body.page-forum .threadviewsection .postblock-own.postblock-read>li.postuser {
     border-left: 2px #868200 solid;
 }
 
+body.page-forum .threadviewsection .postblock.postblock-own {
+    border-left: none;
+}
+
 body.page-forum .threadviewsection .postblock-reply>li.postuser {
     background-color: rgba(158, 158, 158, 0.11);
     border: none;
@@ -306,7 +315,9 @@ body.page-forum .threadviewsection .postblock-reply>li.postuser {
     background-color: var(--thread-bg);
 }
 
+
 /*===== New Post ===== */
+
 .ql-container {
     border: 1px dotted rgba(255, 255, 255, 0.3);
 }
