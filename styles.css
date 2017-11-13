@@ -160,6 +160,16 @@ body.page-forum .forumhead ul .content .subtitle {
 
 /*Page Indicator*/
 
+body.page-forum .threadlistsection .threadblock.is-sticky .threadmain .threadmeta .pagnationcomponent .page{
+    background-color: var(--text-dim-color);
+    color: var(--text-color);
+}
+
+body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent .page{    
+    background-color: var(--text-dim-color);
+    color: var(--text-color);
+}
+
 .pagnation.threadpagnation a.page.is-active,
 .pagnation.postpagnation a.page.is-active,
 .pagnation.threadpagnation a.page.is-active:hover,
