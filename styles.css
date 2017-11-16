@@ -330,3 +330,9 @@ body.page-forum .threadviewsection .postblock-reply>li.postuser {
 .ql-container {
     border: 1px dotted rgba(255, 255, 255, 0.3);
 }
+
+/*===== New Post Tools (bold/italics etc.) ===== */
+
+.ql-toolbar.ql-snow.toolbar button i {
+    color: var(--text-dim-color);
+}
