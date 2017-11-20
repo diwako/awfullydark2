@@ -39,7 +39,9 @@ strong {
     color: #ececec;
 }
 
-.button.is-primary {
+.button.is-primary,
+.button.is-info,
+.menu-list a.is-active {
     background-color: var(--accent);
 }
 
@@ -64,6 +66,10 @@ strong {
     background: var(--accent) !important;
 }
 
+.switch input[type=checkbox]+.check:before {
+    background: var(--text-color);
+}
+
 .switch:focus input[type=checkbox]:checked+.check.is-info {
     box-shadow: 0 0 0.5em var(--accent) !important;
 }
@@ -72,7 +78,7 @@ strong {
 /*===== Main Forum =====*/
 
 .forumcategoryblock .forumcategoryheader .categorytitle {
-    color: var(--text-dim-color) !important;
+    color: var(--text-color) !important;
 }
 
 .navbar.is-primary .navbar-brand>a.navbar-item:hover,
@@ -93,6 +99,10 @@ strong {
 
 #content {
     background-image: none;
+}
+
+body.page-forum .forumcategoryblock .forumcategoryheader {
+    background-color: var(--thread-bg);
 }
 
 
@@ -328,7 +338,8 @@ body.page-forum .threadviewsection .postblock-reply>li.postuser {
 
 /*===== New Post ===== */
 
-.ql-container {
+.ql-container,
+.ql-container.ql-snow {
     border: 1px dotted rgba(255, 255, 255, 0.3);
 }
 
