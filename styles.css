@@ -77,6 +77,55 @@ strong {
 
 /*===== Main Forum =====*/
 
+
+/* new header for desktop only! */
+
+@media screen and (min-width: 768px) {
+    .navbar.is-dark.navbar-main {
+        position: absolute;
+        z-index: 1;
+        right: 40px;
+        background-color: rgba(0, 0, 0, 0)
+    }
+    a.navbar-item.logo {
+        display: none
+    }
+    .navbar-brand i.mdi-home {
+        width: 207px;
+        height: 92px;
+        display: block;
+        background-image: url(https://i.imgur.com/spJqCf0.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        overflow: visible;
+        left: 0;
+        color: transparent;
+        top: -40px;
+    }
+    .navbar-brand span.is-breadcrumb:first-of-type {
+        margin-left: 180px
+    }
+    .navbar-loggedin .navbar-brand {
+        background: #222;
+    }
+}
+
+
+/* new header for smartphones only*/
+
+@media screen and (max-width: 768px) {
+    .navbar-brand .logo>img {
+        display: none;
+    }
+    .navbar-brand .logo {
+        width: 162px;
+        background-image: url(http://i.imgur.com/3vINNru.png);
+        background-repeat: no-repeat;
+        background-size: 195.2px 80px;
+        background-position: 0px -14px;
+    }
+}
+
 .forumcategoryblock .forumcategoryheader .categorytitle {
     color: var(--text-color) !important;
 }
