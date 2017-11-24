@@ -1,5 +1,6 @@
 :root {
     --accent: #2196f3;
+    --accent-brighter: #3da8ff;
     --accent-hover: #003a69;
     --accent-text: #63ffff;
     --accent-secondary: #9b761e;
@@ -399,8 +400,21 @@ body.page-forum .threadviewsection .postblock-reply>li.postuser {
     color: var(--text-dim-color);
 }
 
-/*===== Post Styling ===== */
-/*===== Post links ===== */
-.ql-container.ql-snow a {
-    color: var(--accent);
-}
+/*===== Post Content Styling ===== */
+    /*===== Post links ===== */
+    .ql-container.ql-snow a {
+        color: var(--accent);
+    }
+    /*===== Username @mentions ===== */
+    .ql-container.ql-snow mention a {
+        color: var(--darker);
+    }
+    p mention {
+        background: var(--accent);
+        border-radius: 4px;
+        margin-right: 2px;
+    }
+    /* on hover, use a brighter version of --accent */
+    .ql-container.ql-snow mention a:hover {
+        background: var(--accent-brighter);
+    }
