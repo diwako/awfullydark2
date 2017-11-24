@@ -398,3 +398,9 @@ body.page-forum .threadviewsection .postblock-reply>li.postuser {
 .ql-toolbar.ql-snow.toolbar button i {
     color: var(--text-dim-color);
 }
+
+/*===== Post Styling ===== */
+/*===== Post links ===== */
+.ql-container.ql-snow a {
+    color: var(--accent);
+}
