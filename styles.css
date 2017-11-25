@@ -108,7 +108,16 @@ strong {
     }
     .navbar-loggedin .navbar-brand {
         background: #222;
+	height: 35px;
+    	min-height: 0;
     }
+	/* remove weirdass margin */
+	.navbar > .container .navbar-menu, .container > .navbar .navbar-menu {
+		margin-right: 0;
+	}	
+	.navbar > .container .navbar-brand, .container > .navbar .navbar-brand {
+	    margin-left: 0;
+	}
 }
 
 
