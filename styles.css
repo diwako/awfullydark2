@@ -168,23 +168,24 @@ body.page-forum .forumcategoryblock .forumcategoryheader {
 }
 
 /* stolen from awfully white: notification bell animation */
-.navbar-alerts .has-alerts {
-	i {
-        display: inline-block;
-        transform-origin: 50% 0em;
-        animation: bell 2.5s infinite;
-        text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
-	}	
+.navbar-alerts .has-alerts i {
+	display: inline-block;
+	transform-origin: 50% 0em;
+	animation: bell 2.5s infinite;
+	text-shadow: none;
+}
+.navbar-alerts .has-alerts span{
+	text-shadow: none;
 }
 
 @keyframes bell {
-    0% { transform: scale(1) rotate(0deg); }
-    10% { transform: scale(1.1) rotate(0deg); }
-    20% { transform: scale(1) rotate(0deg); }
-   80% { transform: rotate(0deg); }
-   85% { transform: rotate(15deg); }
-   95% { transform: rotate(-15deg); }
-  100% { transform: rotate(0deg); }
+	0% { transform: scale(1) rotate(0deg); }
+	10% { transform: scale(1.1) rotate(0deg); }
+	20% { transform: scale(1) rotate(0deg); }
+	80% { transform: rotate(0deg); }
+	85% { transform: rotate(15deg); }
+	95% { transform: rotate(-15deg); }
+	100% { transform: rotate(0deg); }
 }
 
 
