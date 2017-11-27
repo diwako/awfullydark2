@@ -177,7 +177,7 @@ strong {
 }
 
 body.page-forum .forumcategoryblock .forumcategoryheader {
-    background-color: var(--thread-bg);
+    background-color: var(--thread-bg-sticky);
 }
 
 
