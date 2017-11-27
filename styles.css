@@ -129,6 +129,7 @@ strong {
         margin-left: 0;
         height: 50px;
         min-height: 50px;
+        z-index: 2;
     }
     .navbar-loggedin .navbar-brand .navbar-item {
         padding-left: 1rem;
