@@ -93,7 +93,7 @@ strong {
     }
     .navbar-brand i.mdi-home {
         width: 207px;
-        height: 92px;
+        height: 100px;
         display: block;
         background-image: url(https://i.imgur.com/spJqCf0.png);
         position: absolute;
@@ -101,23 +101,38 @@ strong {
         overflow: visible;
         left: 0;
         color: transparent;
-        top: -40px;
+        top: -50px;
     }
     .navbar-brand span.is-breadcrumb:first-of-type {
         margin-left: 180px
     }
     .navbar-loggedin .navbar-brand {
         background: #222;
-	height: 35px;
-    	min-height: 0;
+        height: 35px;
+        min-height: 0;
     }
-	/* remove weirdass margin */
-	.navbar > .container .navbar-menu, .container > .navbar .navbar-menu {
-		margin-right: 0;
-	}	
-	.navbar > .container .navbar-brand, .container > .navbar .navbar-brand {
-	    margin-left: 0;
-	}
+    .navbar>.container {
+        min-height: 50px;
+        height: 50px;
+    }
+    .navbar {
+        min-height: 50px;
+        height: 50px;
+    }
+    /* remove weirdass margin */
+    .navbar>.container .navbar-menu,
+    .container>.navbar .navbar-menu {
+        margin-right: 0;
+    }
+    .navbar>.container .navbar-brand,
+    .container>.navbar .navbar-brand {
+        margin-left: 0;
+        height: 50px;
+        min-height: 50px;
+    }
+    .navbar-loggedin .navbar-brand .navbar-item {
+        padding-left: 1rem;
+    }
 }
 
 
@@ -145,6 +160,7 @@ strong {
 .navbar.is-primary .navbar-brand .navbar-link:hover,
 .navbar.is-primary .navbar-brand .navbar-link.is-active {
     background-color: var(--accent);
+    height: 50px;
 }
 
 .navbar.is-primary .navbar-brand>a.navbar-item:hover,
@@ -176,25 +192,42 @@ body.page-forum .forumcategoryblock .forumcategoryheader {
     font-weight: bolder;
 }
 
+
 /* stolen from awfully white: notification bell animation */
+
 .navbar-alerts .has-alerts i {
-	display: inline-block;
-	transform-origin: 50% 0em;
-	animation: bell 2.5s infinite;
-	text-shadow: none;
+    display: inline-block;
+    transform-origin: 50% 0em;
+    animation: bell 2.5s infinite;
+    text-shadow: none;
 }
-.navbar-alerts .has-alerts span{
-	text-shadow: none;
+
+.navbar-alerts .has-alerts span {
+    text-shadow: none;
 }
 
 @keyframes bell {
-	0% { transform: scale(1) rotate(0deg); }
-	10% { transform: scale(1.1) rotate(0deg); }
-	20% { transform: scale(1) rotate(0deg); }
-	80% { transform: rotate(0deg); }
-	85% { transform: rotate(15deg); }
-	95% { transform: rotate(-15deg); }
-	100% { transform: rotate(0deg); }
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    10% {
+        transform: scale(1.1) rotate(0deg);
+    }
+    20% {
+        transform: scale(1) rotate(0deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(15deg);
+    }
+    95% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 
@@ -402,6 +435,7 @@ body.page-forum .threadviewsection .postblock-reply>li.postuser {
 
 .navbar.is-primary {
     background-color: var(--thread-bg);
+    padding: 0px;
 }
 
 .navbar-brand>a.navbar-item:hover {
@@ -430,21 +464,32 @@ body.page-forum .threadviewsection .postblock-reply>li.postuser {
     color: var(--text-dim-color);
 }
 
+
 /*===== Post Content Styling ===== */
-    /*===== Post links ===== */
-    .ql-container.ql-snow a {
-        color: var(--accent);
-    }
-    /*===== Username @mentions ===== */
-    .ql-container.ql-snow mention a {
-        color: var(--darker);
-    }
-    p mention {
-        background: var(--accent);
-        border-radius: 4px;
-        margin-right: 2px;
-    }
-    /* on hover, use a brighter version of --accent */
-    .ql-container.ql-snow mention a:hover {
-        background: var(--accent-brighter);
-    }
+
+
+/*===== Post links ===== */
+
+.ql-container.ql-snow a {
+    color: var(--accent);
+}
+
+
+/*===== Username @mentions ===== */
+
+.ql-container.ql-snow mention a {
+    color: var(--darker);
+}
+
+p mention {
+    background: var(--accent);
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+
+/* on hover, use a brighter version of --accent */
+
+.ql-container.ql-snow mention a:hover {
+    background: var(--accent-brighter);
+}
