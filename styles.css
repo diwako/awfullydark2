@@ -84,12 +84,11 @@ strong {
 @media screen and (min-width: 768px) {
     .navbar.is-dark.navbar-main {
         position: absolute;
-        z-index: 1;
-        right: 40px;
-        background-color: rgba(0, 0, 0, 0)
-    }
-    a.navbar-item.logo {
-        display: none
+        z-index: 2;
+        /*right: 40px;*/
+        width: calc(100% - 30px);
+        background-color: rgba(0, 0, 0, 0);
+        background-color: var(--thread-bg2);
     }
     .navbar-brand i.mdi-home {
         width: 207px;
@@ -102,6 +101,7 @@ strong {
         left: 0;
         color: transparent;
         top: -50px;
+        z-index: 2;
     }
     .navbar-brand span.is-breadcrumb:first-of-type {
         margin-left: 180px
