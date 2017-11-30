@@ -438,6 +438,26 @@ body.page-forum .threadviewsection .postblock-reply>li.postuser {
 }
 
 
+/* ratings */
+
+.votes .list {
+    background-color: var(--thread-bg);
+}
+
+.votes .list>div {
+    border-right: 1px solid var(--darker);
+}
+
+a.username.user-gold {
+    color: #e8b622;
+}
+
+a.username.user-moderator,
+a.username.user-admin {
+    color: #4caf50;
+}
+
+
 /*===== Navbar =====*/
 
 .navbar.is-primary {
