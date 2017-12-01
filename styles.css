@@ -86,15 +86,21 @@ strong {
         position: absolute;
         z-index: 2;
         /*right: 40px;*/
-        width: calc(100% - 30px);
+        width: calc(100% - 60px);
         background-color: rgba(0, 0, 0, 0);
         background-color: var(--thread-bg2);
+    }
+    .force-wide-design .navbar.is-dark.navbar-main {
+        width: calc(100% - 30px);
     }
     .navbar.is-dark.navbar-main {
         z-index: 1;
     }
     .has-background .hero-body {
         z-index: 0;
+    }
+    .navbar.is-primary .navbar-end>.navbar-item {
+        z-index: 1;
     }
     .navbar-brand i.mdi-home {
         width: 207px;
@@ -141,7 +147,6 @@ strong {
         padding-left: 1rem;
     }
 }
-
 
 /* new header for smartphones only*/
 
