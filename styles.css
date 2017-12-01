@@ -148,6 +148,7 @@ strong {
     }
 }
 
+
 /* new header for smartphones only*/
 
 @media screen and (max-width: 768px) {
@@ -188,7 +189,17 @@ strong {
     background-image: none;
 }
 
+
+/* sub forum */
+
 body.page-forum .forumcategoryblock .forumcategoryheader {
+    background-color: var(--thread-bg-sticky);
+}
+
+
+/* sub sub forum */
+
+body.page-forum .forumcategoryblock .forumchildren .forumcategoryblock .forumcategoryheader {
     background-color: var(--thread-bg-sticky);
 }
 
@@ -274,6 +285,11 @@ body.page-forum .forumcategoryblock .forumcategoryheader {
 
 .navbar-alerts .alert-dropdown .alert-item.alert-seen {
     background-color: var(--thread-bg);
+}
+
+body.page-forum .forumcategoryblock .forumcategoryblock {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
