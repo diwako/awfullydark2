@@ -146,6 +146,15 @@ strong {
     .navbar-loggedin .navbar-brand .navbar-item {
         padding-left: 1rem;
     }
+    /* ==== New header END! ==== */
+    /*Normal threads*/
+    body.page-forum.force-wide-design .threadlistsection {
+        padding: 1rem 1.5rem;
+    }
+    /* post padding on fill width! */
+    body.page-forum.force-wide-design .container.postlist {
+        padding: 0rem 1.5rem;
+    }
 }
 
 
