@@ -1,5 +1,6 @@
 .votebutton:hover {
-  animation: ratingDance 1s alternate infinite;
+  animation: ratingDance 1s infinite;
+  filter: drop-shadow(0px 0px 3px #ffcc00);
 }
 
 @keyframes ratingDance {
