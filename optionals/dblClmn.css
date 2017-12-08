@@ -5,11 +5,17 @@
     display: inline-block;
 }
 
-.force-wide-design .container {
+.force-wide-design .container:not(.postlist) {
     width: 100% !important;
     max-width: 100% !important;
     flex-wrap: inherit;
     column-count: 2;
+}
+
+.useroptions .container,
+.forumhead .container,
+.container.postlist {
+    column-count: 1!important;
 }
 
 .forumchildren .forumcategoryblock {
