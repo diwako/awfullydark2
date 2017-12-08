@@ -1,0 +1,17 @@
+.forumcategoryblock {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: inline-block;
+}
+
+.force-wide-design .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-wrap: inherit;
+    column-count: 2;
+}
+
+.forumchildren .forumcategoryblock {
+    width: 100%;
+}

@@ -1,0 +1,15 @@
+.votebutton:hover {
+  animation: ratingDance 1s alternate infinite;
+}
+
+@keyframes ratingDance {
+  0% {
+    transform: rotate(15deg) scale(1);
+  }
+  50% {
+    transform: rotate(-15deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(15deg) scale(1);
+  }
+}

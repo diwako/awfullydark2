@@ -1,0 +1,15 @@
+spoiler,
+spoiler a:not(:hover) {
+    text-decoration: none;
+    transition: none;
+    filter: none;
+    background: #000000!important;
+    color: #000000!important;
+}
+
+spoiler:hover,
+spoiler:focus {
+    filter: none;
+    transition: none;
+    color: #FFFFFF!important;
+}
