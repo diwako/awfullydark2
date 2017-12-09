@@ -1,25 +1,27 @@
 .forumcategoryblock {
-    width: 100%;
-    height: fit-content;
-    padding: 10px;
-    display: inline-block;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  display: inline-block;
 }
 
 .force-wide-design .container:not(.postlist) {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex-wrap: inherit;
-    column-count: 2;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-wrap: inherit;
+  column-count: 2;
 }
 
 .useroptions .container,
 .forumhead .container,
 .container.postlist,
 .threadlistsection .container,
-.section .container {
-    column-count: 1!important;
+.section.threadviewsection .container,
+.section.threadlistsection .container,
+.section.forumhead .container {
+  column-count: 1 !important;
 }
 
 .forumchildren .forumcategoryblock {
-    width: 100%;
+  width: 100%;
 }
