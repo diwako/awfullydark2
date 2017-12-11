@@ -24,6 +24,17 @@ html,
     background: var(--darker);
 }
 
+
+/* Remove noise texture */
+
+html,
+.navbar,
+.pagnation.postpagnation,
+.forumcategoryheader,
+.forumpanel {
+    background-image: none!important;
+}
+
 body {
     color: var(--text-color);
 }
