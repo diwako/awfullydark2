@@ -18,7 +18,9 @@
 .threadlistsection .container,
 .section.threadviewsection .container,
 .section.threadlistsection .container,
-.section.forumhead .container {
+.section.forumhead .container,
+body.usershop .container,
+body.newthread .container {
   column-count: 1 !important;
 }
 
