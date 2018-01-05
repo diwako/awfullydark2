@@ -32,7 +32,7 @@ html,
 .pagnation.postpagnation,
 .forumcategoryheader,
 .forumpanel {
-    background-image: none!important;
+    background-image: none !important;
 }
 
 body {
@@ -74,15 +74,15 @@ strong {
     border-top: 6px solid var(--accent);
 }
 
-.switch input[type=checkbox]:checked+.check.is-info {
+.switch input[type="checkbox"]:checked+.check.is-info {
     background: var(--accent) !important;
 }
 
-.switch input[type=checkbox]+.check:before {
+.switch input[type="checkbox"]+.check:before {
     background: var(--text-color);
 }
 
-.switch:focus input[type=checkbox]:checked+.check.is-info {
+.switch:focus input[type="checkbox"]:checked+.check.is-info {
     box-shadow: 0 0 0.5em var(--accent) !important;
 }
 
@@ -94,15 +94,11 @@ strong {
 
 @media screen and (min-width: 768px) {
     .navbar.is-dark.navbar-main {
-        position: absolute;
-        z-index: 2;
-        /*right: 40px;*/
         width: calc(100% - 60px);
-        background-color: rgba(0, 0, 0, 0);
         background-color: var(--thread-bg2);
     }
     .force-wide-design .navbar.is-dark.navbar-main {
-        width: calc(100% - 30px);
+        width: 100%;
     }
     .navbar.is-dark.navbar-main {
         z-index: 1;
@@ -113,34 +109,43 @@ strong {
     .navbar.is-primary .navbar-end>.navbar-item {
         z-index: 1;
     }
-    .navbar-brand i.mdi-home {
+    .navbar-item.logo {
         width: 207px;
-        height: 100px;
+        height: 150px;
         display: block;
         background-image: url(https://i.imgur.com/spJqCf0.png);
-        position: absolute;
         background-repeat: no-repeat;
         overflow: visible;
-        left: 0;
         color: transparent;
-        top: -50px;
         z-index: 2;
+        top: -8px;
     }
-    .navbar-brand span.is-breadcrumb:first-of-type {
-        margin-left: 180px
+    .navbar-toolbar .container .navbar-brand .navbar-item.darker {
+        color: var(--text-color);
+    }
+    .navbar-item.logo>img {
+        display: none
+    }
+    .navbar-toolbar .container .navbar-brand .navbar-item .coins {
+        color: #ffca43;
+    }
+    .navbar-toolbar .container .navbar-brand .navbar-item .mdi-book {
+        color: #59e479;
+    }
+    .navbar-toolbar .container .navbar-brand .navbar-item .mdi-file-document {
+        color: #e45959;
+    }
+    .navbar-toolbar .container .navbar-brand .navbar-item .mdi-account {
+        color: #51a4ff;
+        font-size: 1.35rem;
+    }
+    .navbar-brand .level-item.is-hidden-touch>.navbar-item:first-child {
+        margin-left: 220px;
     }
     .navbar-loggedin .navbar-brand {
         background: #222;
         height: 35px;
         min-height: 0;
-    }
-    .navbar>.container {
-        min-height: 50px;
-        height: 50px;
-    }
-    .navbar {
-        min-height: 50px;
-        height: 50px;
     }
     /* remove weirdass margin */
     .navbar>.container .navbar-menu,
@@ -150,8 +155,7 @@ strong {
     .navbar>.container .navbar-brand,
     .container>.navbar .navbar-brand {
         margin-left: 0;
-        height: 50px;
-        min-height: 50px;
+        height: 40px;
         z-index: 2;
     }
     .navbar-loggedin .navbar-brand .navbar-item {
