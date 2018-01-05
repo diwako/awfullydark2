@@ -126,16 +126,16 @@ strong {
     .navbar-item.logo>img {
         display: none
     }
-    .navbar-toolbar .container .navbar-brand .navbar-item .coins {
+    .navbar-toolbar .container .navbar-brand .is-active .navbar-item .coins {
         color: #ffca43;
     }
-    .navbar-toolbar .container .navbar-brand .navbar-item .mdi-book {
+    .navbar-toolbar .container .navbar-brand .is-active .navbar-item .mdi-book {
         color: #59e479;
     }
-    .navbar-toolbar .container .navbar-brand .navbar-item .mdi-file-document {
+    .navbar-toolbar .container .navbar-brand .is-active .navbar-item .mdi-file-document {
         color: #e45959;
     }
-    .navbar-toolbar .container .navbar-brand .navbar-item .mdi-account {
+    .navbar-toolbar .container .navbar-brand .is-active .navbar-item .mdi-account {
         color: #51a4ff;
         font-size: 1.35rem;
     }
