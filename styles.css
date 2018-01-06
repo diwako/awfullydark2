@@ -273,17 +273,31 @@ body.page-forum .forumcategoryblock .forumchildren .forumcategoryblock .forumcat
     border: 1px solid var(--text-dim-color);
 }
 
-.alert-item .alert-time-header {
+.alert-component .dropdown-item .alert-dropdown .alert-item .alert-time-header {
     background: var(--thread-bg-sticky);
     color: var(--text-color);
 }
 
+.alert-component .dropdown-item .alert-header {
+    background: var(--thread-bg-read);
+}
+
 .alert-item>a {
-    background: var(--thread-bg);
+    background: var(--darker);
+    color: var(--text-color);
 }
 
 .alert-item {
     border: none!important;
+}
+
+.alert-component .dropdown-item .alert-dropdown .alert-item.alert-seen {
+    filter: brightness(0.4) saturate(0.1);
+}
+
+.alert-component .dropdown-item .alert-dropdown .alert-item.alert-seen .alert-time-header {
+    background: var(--thread-bg-sticky);
+    border-top: 1px solid #9c9c9c;
 }
 
 
