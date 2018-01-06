@@ -146,7 +146,7 @@ strong {
     .container>.navbar .navbar-brand {
         margin-left: 0;
         height: 40px;
-        z-index: 2;
+        z-index: 1;
     }
     .navbar-loggedin .navbar-brand .navbar-item {
         padding-left: 1rem;
