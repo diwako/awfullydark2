@@ -86,6 +86,11 @@ strong {
     box-shadow: 0 0 0.5em var(--accent) !important;
 }
 
+a.dropdown-item:hover,
+.dropdown .dropdown-menu .has-link a:hover {
+    background-color: var(--accent);
+}
+
 
 /*===== Main Forum =====*/
 
@@ -179,6 +184,17 @@ strong {
 
 .forumcategoryblock .forumcategoryheader .categorytitle {
     color: var(--text-color) !important;
+}
+
+.navbar.is-dark .navbar-end a.navbar-item:hover,
+.navbar.is-dark .navbar-end a.navbar-item.is-active,
+.navbar.is-dark .navbar-start a.navbar-item:hover,
+.navbar.is-dark .navbar-start a.navbar-item.is-active {
+    background-color: var(--accent) !important;
+}
+
+.navbar-toolbar .container .navbar-brand .navbar-item.darker:hover {
+    color: var(--accent);
 }
 
 .navbar.is-primary .navbar-brand>a.navbar-item:hover,
