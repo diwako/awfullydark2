@@ -269,36 +269,25 @@ body.page-forum .forumcategoryblock .forumchildren .forumcategoryblock .forumcat
 
 /*alert window*/
 
-.dropdown-content .dropdown-item,
-.dropdown-content .dropdown .dropdown-menu .has-link a,
-.dropdown .dropdown-menu .has-link .dropdown-content a,
-.dropdown-content a.dropdown-item,
-.dropdown-content .dropdown .dropdown-menu .has-link a,
-.dropdown .dropdown-menu .has-link .dropdown-content a {
-    background-color: var(--thread-bg2);
-    color: var(--text-dim-color) !important;
+.dropdown.is-bottom-left .dropdown-menu {
+    border: 1px solid var(--text-dim-color);
 }
 
-.dropdown-content .dropdown-item:hover,
-.dropdown-content .dropdown .dropdown-menu .has-link a:hover,
-.dropdown .dropdown-menu .has-link .dropdown-content a:hover,
-.dropdown-content a.dropdown-item:hover,
-.dropdown-content .dropdown .dropdown-menu .has-link a:hover,
-.dropdown .dropdown-menu .has-link .dropdown-content a:hover {
-    color: var(--text-color) !important;
-}
-
-.alert-dropdown .alert-item>a {
+.alert-item .alert-time-header {
+    background: var(--thread-bg-sticky);
     color: var(--text-color);
 }
 
-.alert-dropdown .alert-item>a:hover {
-    background-color: var(--accent);
+.alert-item>a {
+    background: var(--thread-bg);
 }
 
-a .alert-dropdown .alert-item.alert-seen {
-    background-color: var(--thread-bg);
+.alert-item {
+    border: none!important;
 }
+
+
+/* needs info: */
 
 body.page-forum .forumcategoryblock .forumcategoryblock {
     margin-left: 0;
