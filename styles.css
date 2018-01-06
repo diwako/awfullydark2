@@ -557,3 +557,10 @@ p mention {
 .ql-container.ql-snow mention a:hover {
     background: var(--accent-brighter);
 }
+
+
+/* commits page */
+
+#content .tabs {
+    background-color: var(--thread-bg2);
+}
