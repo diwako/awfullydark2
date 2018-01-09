@@ -1,35 +1,44 @@
 @media screen and (min-width: 1280px) {
-    .section:not(.threadlistsection):not(.forumheadthreadlist):not(.threadviewsection):not(.forumheadthreadview) .container {
-        width: 100%!important;
-        max-width: 100%!important;
-    }
-    body.page-forum .forumcategoryblock {
-        width: 50%;
-        float: left;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 5px;
-    }
-    body.page-forum .forumcategoryblock:nth-of-type(4) {
-        clear: both;
-        width: 100%;
-        padding: 0;
-        padding-top: 20px;
-    }
-    .footer {
-        margin-top: 25px;
-        position: relative;
-        clear: both;
-    }
-    #content {
-        padding-bottom: 0 !important;
-    }
-    body.page-forum .forumcategoryblock .forumcategoryblock {
-        margin-top: 5px;
-    }
-    body.page-forum .forumcategoryblock .forumcategoryblock:nth-of-type(4) {
-        padding: 0;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+  section.section.section-forumstats {
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+    width: 100%;
+  }
+  .section:not(.threadlistsection):not(.forumheadthreadlist):not(.threadviewsection):not(.forumheadthreadview)
+    .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  body.page-forum .forumcategoryblock {
+    width: 50%;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+  }
+  body.page-forum .forumcategoryblock:nth-of-type(4) {
+    clear: both;
+    width: 100%;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .footer {
+    margin-top: 25px;
+    position: relative;
+    clear: both;
+  }
+  #content {
+    padding-bottom: 0 !important;
+  }
+  body.page-forum .forumcategoryblock .forumcategoryblock {
+    margin-top: 5px;
+  }
+  body.page-forum .forumcategoryblock .forumcategoryblock:nth-of-type(4) {
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
