@@ -95,6 +95,20 @@ a.dropdown-item:hover,
 /*===== Main Forum =====*/
 
 
+/* navbar coins GOLD color */
+
+.navbar-item .coins {
+    color: #ffca43;
+}
+
+
+/* mention/quote etc icon colors */
+
+.navbar-toolbar .container .navbar-brand .navbar-item.darker {
+    color: var(--text-color);
+}
+
+
 /* new header for desktop only! */
 
 @media screen and (min-width: 768px) {
@@ -125,14 +139,8 @@ a.dropdown-item:hover,
         z-index: 2;
         top: -8px;
     }
-    .navbar-toolbar .container .navbar-brand .navbar-item.darker {
-        color: var(--text-color);
-    }
     .navbar-item.logo>img {
         display: none;
-    }
-    .navbar-item .coins {
-        color: #ffca43;
     }
     .navbar-brand .level-item.is-hidden-touch>.navbar-item:first-child {
         margin-left: 220px;
