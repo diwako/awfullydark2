@@ -1,29 +1,27 @@
 :root {
-    --accent: #2196f3;
-    --accent-brighter: #3da8ff;
-    --accent-hover: #003a69;
-    --accent-text: #63ffff;
-    --accent-secondary: #9b761e;
-    --thread-bg: #303030;
-    --thread-bg2: #303030;
-    --thread-bg-read: #1c1c1c;
-    --thread-bg-sticky: #572121;
-    --thread-bg-sticky2: #573521;
-    --thread-separator: #202020;
-    --text-color: #dadada;
-    --text-dim-color: #7d7d7d;
-    /* Backgrounds */
-    --darker: #1b1b1b;
+  --accent: #2196f3;
+  --accent-brighter: #3da8ff;
+  --accent-hover: #003a69;
+  --accent-text: #63ffff;
+  --accent-secondary: #9b761e;
+  --thread-bg: #303030;
+  --thread-bg2: #303030;
+  --thread-bg-read: #1c1c1c;
+  --thread-bg-sticky: #572121;
+  --thread-bg-sticky2: #573521;
+  --thread-separator: #202020;
+  --text-color: #dadada;
+  --text-dim-color: #7d7d7d;
+  /* Backgrounds */
+  --darker: #1b1b1b;
 }
-
 
 /*===== General =====*/
 
 html,
 #forum {
-    background: var(--darker);
+  background: var(--darker);
 }
-
 
 /* Remove noise texture */
 
@@ -32,559 +30,555 @@ html,
 .pagnation.postpagnation,
 .forumcategoryheader,
 .forumpanel {
-    background-image: none !important;
+  background-image: none !important;
 }
 
 body {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 a {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 a:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 strong {
-    color: #ececec;
+  color: #ececec;
 }
 
 .button.is-primary,
 .button.is-info,
 .menu-list a.is-active {
-    background-color: var(--accent);
+  background-color: var(--accent);
 }
 
 .button.is-primary:hover,
 .button.is-primary.is-hovered {
-    background-color: var(--accent-hover);
+  background-color: var(--accent-hover);
 }
 
 .label {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .tooltip.is-primary:after {
-    background-color: var(--accent);
+  background-color: var(--accent);
 }
 
 .tooltip.is-top.is-primary:before {
-    border-top: 6px solid var(--accent);
+  border-top: 6px solid var(--accent);
 }
 
-.switch input[type="checkbox"]:checked+.check.is-info {
-    background: var(--accent) !important;
+.switch input[type="checkbox"]:checked + .check.is-info {
+  background: var(--accent) !important;
 }
 
-.switch input[type="checkbox"]+.check:before {
-    background: var(--text-color);
+.switch input[type="checkbox"] + .check:before {
+  background: var(--text-color);
 }
 
-.switch:focus input[type="checkbox"]:checked+.check.is-info {
-    box-shadow: 0 0 0.5em var(--accent) !important;
+.switch:focus input[type="checkbox"]:checked + .check.is-info {
+  box-shadow: 0 0 0.5em var(--accent) !important;
 }
 
 a.dropdown-item:hover,
 .dropdown .dropdown-menu .has-link a:hover {
-    background-color: var(--accent);
+  background-color: var(--accent);
 }
 
-
 /*===== Main Forum =====*/
-
 
 /* navbar coins GOLD color */
 
 .navbar-item .coins {
-    color: #ffca43;
+  color: #ffca43;
 }
-
 
 /* mention/quote etc icon colors */
 
 .navbar-toolbar .container .navbar-brand .navbar-item.darker {
-    color: var(--text-color);
+  color: var(--text-color);
 }
-
 
 /* new header for desktop only! */
 
 @media screen and (min-width: 768px) {
-    .navbar.is-dark.navbar-main {
-        width: 100%;
-        background-color: var(--thread-bg2);
-    }
-    .force-wide-design .navbar.is-dark.navbar-main {
-        width: 100%;
-    }
-    .navbar.is-dark.navbar-main {
-        z-index: 1;
-    }
-    .has-background .hero-body {
-        z-index: 0;
-    }
-    .navbar.is-primary .navbar-end>.navbar-item {
-        z-index: 1;
-    }
-    .navbar-item.logo {
-        width: 207px;
-        height: 100px;
-        display: block;
-        background-image: url(https://i.imgur.com/spJqCf0.png);
-        background-repeat: no-repeat;
-        overflow: visible;
-        color: transparent;
-        z-index: 2;
-        top: -8px;
-    }
-    .navbar-item.logo>img {
-        display: none;
-    }
-    .navbar-brand .level-item.is-hidden-touch>.navbar-item:first-child {
-        margin-left: 220px;
-    }
-    .navbar-loggedin .navbar-brand {
-        background: #222;
-        height: 35px;
-        min-height: 0;
-    }
-    /* remove weirdass margin */
-    .navbar>.container .navbar-menu,
-    .container>.navbar .navbar-menu {
-        margin-right: 0;
-    }
-    .navbar>.container .navbar-brand,
-    .container>.navbar .navbar-brand {
-        margin-left: 0;
-        height: 40px;
-    }
-    .navbar-loggedin .navbar-brand .navbar-item {
-        padding-left: 1rem;
-    }
-    /* ==== New header END! ==== */
-    /*Normal threads*/
-    body.page-forum.force-wide-design .threadlistsection {
-        padding: 1rem 1.5rem;
-    }
-    /* post padding on fill width! */
-    body.page-forum.force-wide-design .container.postlist {
-        padding: 0rem 1.5rem;
-    }
+  .navbar.is-dark.navbar-main {
+    width: 100%;
+    background-color: var(--thread-bg2);
+  }
+  .force-wide-design .navbar.is-dark.navbar-main {
+    width: 100%;
+  }
+  .navbar.is-dark.navbar-main {
+    z-index: 1;
+  }
+  .has-background .hero-body {
+    z-index: 0;
+  }
+  .navbar.is-primary .navbar-end > .navbar-item {
+    z-index: 1;
+  }
+  .navbar-item.logo {
+    width: 207px;
+    height: 100px;
+    display: block;
+    background-image: url(https://i.imgur.com/spJqCf0.png);
+    background-repeat: no-repeat;
+    overflow: visible;
+    color: transparent;
+    z-index: 2;
+    top: -8px;
+  }
+  .navbar-item.logo > img {
+    display: none;
+  }
+  .navbar-brand .level-item.is-hidden-touch > .navbar-item:first-child {
+    margin-left: 220px;
+  }
+  .navbar-loggedin .navbar-brand {
+    background: #222;
+    height: 35px;
+    min-height: 0;
+  }
+  /* remove weirdass margin */
+  .navbar > .container .navbar-menu,
+  .container > .navbar .navbar-menu {
+    margin-right: 0;
+  }
+  .navbar > .container .navbar-brand,
+  .container > .navbar .navbar-brand {
+    margin-left: 0;
+    height: 40px;
+  }
+  .navbar-loggedin .navbar-brand .navbar-item {
+    padding-left: 1rem;
+  }
+  /* ==== New header END! ==== */
+  /*Normal threads*/
+  body.page-forum.force-wide-design .threadlistsection {
+    padding: 1rem 1.5rem;
+  }
+  /* post padding on fill width! */
+  body.page-forum.force-wide-design .container.postlist {
+    padding: 0rem 1.5rem;
+  }
 }
-
 
 /* new header for smartphones only*/
 
 @media screen and (max-width: 768px) {
-    .navbar-brand .logo>img {
-        display: none;
-    }
-    .navbar-brand .logo {
-        width: 162px;
-        background-image: url(http://i.imgur.com/3vINNru.png);
-        background-repeat: no-repeat;
-        background-size: 195.2px 80px;
-        background-position: 0px -14px;
-    }
+  .navbar-brand .logo > img {
+    display: none;
+  }
+  .navbar-brand .logo {
+    width: 162px;
+    background-image: url(http://i.imgur.com/3vINNru.png);
+    background-repeat: no-repeat;
+    background-size: 195.2px 80px;
+    background-position: 0px -14px;
+  }
 }
 
 .forumcategoryblock .forumcategoryheader .categorytitle {
-    color: var(--text-color) !important;
+  color: var(--text-color) !important;
 }
 
 .navbar.is-dark .navbar-end a.navbar-item:hover,
 .navbar.is-dark .navbar-end a.navbar-item.is-active,
 .navbar.is-dark .navbar-start a.navbar-item:hover,
 .navbar.is-dark .navbar-start a.navbar-item.is-active {
-    background-color: var(--accent) !important;
+  background-color: var(--accent) !important;
 }
 
 .navbar-toolbar .container .navbar-brand .navbar-item.darker:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
-.navbar.is-primary .navbar-brand>a.navbar-item:hover,
-.navbar.is-primary .navbar-brand>a.navbar-item.is-active,
+.navbar.is-primary .navbar-brand > a.navbar-item:hover,
+.navbar.is-primary .navbar-brand > a.navbar-item.is-active,
 .navbar.is-primary .navbar-brand .navbar-link:hover,
 .navbar.is-primary .navbar-brand .navbar-link.is-active {
-    background-color: var(--accent);
-    height: 50px;
+  background-color: var(--accent);
+  height: 50px;
 }
 
-.navbar.is-primary .navbar-brand>a.navbar-item:hover,
+.navbar.is-primary .navbar-brand > a.navbar-item:hover,
 .navbar.is-primary .navbar-brand .navbar-link:hover {
-    background-color: var(--accent) !important;
+  background-color: var(--accent) !important;
 }
 
 .user-moderator a {
-    color: #4caf50 !important;
+  color: #4caf50 !important;
 }
 
 #content {
-    background-image: none;
+  background-image: none;
 }
-
 
 /* sub forum */
 
 body.page-forum .forumcategoryblock .forumcategoryheader {
-    background-color: var(--thread-bg-sticky);
+  background-color: var(--thread-bg-sticky);
 }
-
 
 /* sub sub forum */
 
-body.page-forum .forumcategoryblock .forumchildren .forumcategoryblock .forumcategoryheader {
-    background-color: var(--thread-bg-sticky);
+body.page-forum
+  .forumcategoryblock
+  .forumchildren
+  .forumcategoryblock
+  .forumcategoryheader {
+  background-color: var(--thread-bg-sticky);
 }
-
 
 /*alert button */
 
 .navbar-alerts .alert-button {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .navbar-alerts .alert-button.has-alerts {
-    color: var(--accent);
-    font-weight: bolder;
+  color: var(--accent);
+  font-weight: bolder;
 }
-
 
 /* stolen from awfully white: notification bell animation */
 
 .navbar-alerts .has-alerts i {
-    display: inline-block;
-    transform-origin: 50% 0em;
-    animation: bell 2.5s infinite;
-    text-shadow: none;
+  display: inline-block;
+  transform-origin: 50% 0em;
+  animation: bell 2.5s infinite;
+  text-shadow: none;
 }
 
 .navbar-alerts .has-alerts span {
-    text-shadow: none;
+  text-shadow: none;
 }
 
 @keyframes bell {
-    0% {
-        transform: scale(1) rotate(0deg);
-    }
-    10% {
-        transform: scale(1.1) rotate(0deg);
-    }
-    20% {
-        transform: scale(1) rotate(0deg);
-    }
-    80% {
-        transform: rotate(0deg);
-    }
-    85% {
-        transform: rotate(15deg);
-    }
-    95% {
-        transform: rotate(-15deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  10% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  20% {
+    transform: scale(1) rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(15deg);
+  }
+  95% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
 
 /*alert window*/
 
 .dropdown.is-bottom-left .dropdown-menu {
-    border: 1px solid var(--text-dim-color);
+  border: 1px solid var(--text-dim-color);
 }
 
 .alert-component .dropdown-item .alert-dropdown .alert-item .alert-time-header {
-    background: var(--thread-bg-sticky);
-    color: var(--text-color);
+  background: var(--thread-bg-sticky);
+  color: var(--text-color);
 }
 
 .alert-component .dropdown-item .alert-header {
-    background: var(--thread-bg-read);
+  background: var(--thread-bg-read);
 }
 
-.alert-item>a {
-    background: var(--darker);
-    color: var(--text-color);
+.alert-item > a {
+  background: var(--darker);
+  color: var(--text-color);
 }
 
 .alert-item {
-    border: none!important;
+  border: none !important;
 }
 
 .alert-component .dropdown-item .alert-dropdown .alert-item.alert-seen {
-    filter: brightness(0.4) saturate(0.1);
+  filter: brightness(0.4) saturate(0.1);
 }
 
-.alert-component .dropdown-item .alert-dropdown .alert-item.alert-seen .alert-time-header {
-    background: var(--thread-bg-sticky);
-    border-top: 1px solid #9c9c9c;
+.alert-component
+  .dropdown-item
+  .alert-dropdown
+  .alert-item.alert-seen
+  .alert-time-header {
+  background: var(--thread-bg-sticky);
+  border-top: 1px solid #9c9c9c;
 }
-
 
 /* needs info: */
 
 body.page-forum .forumcategoryblock .forumcategoryblock {
-    margin-left: 0;
-    margin-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
-
 
 /*===== SubForum Main Page =====*/
 
 body.page-forum .forumhead ul .content .title a {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 body.page-forum .forumhead ul .content .subtitle {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .pagnation.threadpagnation,
 .pagnation.postpagnation {
-    background-color: var(--thread-bg);
+  background-color: var(--thread-bg);
 }
-
 
 /*Page Indicator*/
 
-body.page-forum .threadlistsection .threadblock.is-sticky .threadmain .threadmeta .pagnationcomponent .page {
-    background-color: var(--text-dim-color);
-    color: var(--text-color);
+body.page-forum
+  .threadlistsection
+  .threadblock.is-sticky
+  .threadmain
+  .threadmeta
+  .pagnationcomponent
+  .page {
+  background-color: var(--text-dim-color);
+  color: var(--text-color);
 }
 
-body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent .page {
-    background-color: var(--text-dim-color);
-    color: var(--text-color);
+body.page-forum
+  .threadlistsection
+  .threadblock
+  .threadmain
+  .threadmeta
+  .pagnationcomponent
+  .page {
+  background-color: var(--text-dim-color);
+  color: var(--text-color);
 }
 
 .pagnation.threadpagnation a.page.is-active,
 .pagnation.postpagnation a.page.is-active,
 .pagnation.threadpagnation a.page.is-active:hover,
 .pagnation.postpagnation a.page.is-active:hover {
-    background-color: var(--accent);
+  background-color: var(--accent);
 }
 
 .pagnation.threadpagnation a.page:hover,
 .pagnation.postpagnation a.page:hover {
-    background-color: var(--accent-hover);
+  background-color: var(--accent-hover);
 }
 
 body.page-forum .forumhead ul .content .subtitle a {
-    color: var(--text-dim-color);
+  color: var(--text-dim-color);
 }
 
-
 /*===== Threads =====*/
-
 
 /*Normal threads*/
 
 body.page-forum .threadlistsection .threadblock {
-    box-shadow: inset 0px 1px 0px var(--thread-separator);
+  box-shadow: inset 0px 1px 0px var(--thread-separator);
 }
 
 body.page-forum .forumpanel {
-    background-color: var(--thread-bg);
+  background-color: var(--thread-bg);
 }
 
 body.page-forum .threadlistsection .threadblock:nth-child(even) {
-    background-color: var(--thread-bg2);
+  background-color: var(--thread-bg2);
 }
-
 
 /*Viewed threads*/
 
 body.page-forum ul.threadblock.forumpanel.has-seen {
-    background-color: var(--thread-bg-read);
+  background-color: var(--thread-bg-read);
 }
 
 body.page-forum ul.threadblock.forumpanel.has-seen.has-new-posts {
-    background-color: var(--thread-bg);
+  background-color: var(--thread-bg);
 }
 
-body.page-forum ul.threadblock:nth-child(even).forumpanel.has-seen.has-new-posts {
-    background-color: var(--thread-bg2);
+body.page-forum
+  ul.threadblock:nth-child(even).forumpanel.has-seen.has-new-posts {
+  background-color: var(--thread-bg2);
 }
-
 
 /*Stickied threads*/
 
 body.page-forum .threadlistsection .threadblock.is-sticky {
-    background-color: var(--thread-bg-sticky) !important;
+  background-color: var(--thread-bg-sticky) !important;
 }
 
 body.page-forum .threadlistsection .threadblock.is-sticky:nth-child(even) {
-    background-color: var(--thread-bg-sticky2) !important;
+  background-color: var(--thread-bg-sticky2) !important;
 }
 
 body.page-forum .threadlistsection .threadblock.is-sticky a {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 body.page-forum .threadlistsection .threadblock.is-sticky {
-    color: var(--text-dim-color);
+  color: var(--text-dim-color);
 }
 
-
 /*New Post indicator*/
-
 
 /* Read thread with no new posts: gets a border to the left */
 
 ul.threadblock.forumpanel.has-seen {
-    box-shadow: inset 2px 0px 0px var(--accent-secondary);
+  box-shadow: inset 2px 0px 0px var(--accent-secondary);
 }
-
 
 /* Read thread with new posts: gets a border to the left */
 
 ul.threadblock.forumpanel.has-seen.has-new-posts {
-    box-shadow: inset 2px 0px 0px var(--accent);
+  box-shadow: inset 2px 0px 0px var(--accent);
 }
-
 
 /*Post head*/
 
 body.page-forum .threadviewsection .postblock .posthead {
-    color: var(--text-dim-color);
+  color: var(--text-dim-color);
 }
 
 body.page-forum .threadviewsection .postblock .posthead a,
 body.page-forum .threadviewsection .postblock .posthead strong {
-    color: var(--text-dim-color);
+  color: var(--text-dim-color);
 }
-
 
 /*new posts*/
 
-body.page-forum .threadviewsection .postblock>li.postuser {
-    background-color: rgba(25, 49, 68, 0.5);
-    border-left: 2px var(--accent) solid;
+body.page-forum .threadviewsection .postblock > li.postuser {
+  background-color: rgba(25, 49, 68, 0.5);
+  border-left: 2px var(--accent) solid;
 }
 
-body.page-forum .threadviewsection .postblock-read>li.postuser {
-    background-color: rgba(158, 158, 158, 0.11);
-    border-left: 2px var(--thread-bg) solid;
+body.page-forum .threadviewsection .postblock-read > li.postuser {
+  background-color: rgba(158, 158, 158, 0.11);
+  border-left: 2px var(--thread-bg) solid;
 }
 
-body.page-forum .threadviewsection .postblock-own>li.postuser {
-    background-color: rgba(134, 130, 0, 0.11);
-    border-left: 2px var(--accent) solid;
+body.page-forum .threadviewsection .postblock-own > li.postuser {
+  background-color: rgba(134, 130, 0, 0.11);
+  border-left: 2px var(--accent) solid;
 }
 
-body.page-forum .threadviewsection .postblock-own.postblock-read>li.postuser {
-    background-color: rgba(134, 130, 0, 0.11);
-    border-left: 2px #868200 solid;
+body.page-forum .threadviewsection .postblock-own.postblock-read > li.postuser {
+  background-color: rgba(134, 130, 0, 0.11);
+  border-left: 2px #868200 solid;
 }
 
 body.page-forum .threadviewsection .postblock.postblock-own {
-    border: none;
-    box-shadow: none;
+  border: none;
+  box-shadow: none;
 }
 
-body.page-forum .threadviewsection .postblock-reply>li.postuser {
-    background-color: rgba(158, 158, 158, 0.11);
-    border: none;
+body.page-forum .threadviewsection .postblock-reply > li.postuser {
+  background-color: rgba(158, 158, 158, 0.11);
+  border: none;
 }
-
 
 /*in thread title*/
 
 .title {
-    color: var(--text-color);
+  color: var(--text-color);
 }
-
 
 /* ratings */
 
 .votes .list {
-    background-color: var(--thread-bg);
+  background-color: var(--thread-bg);
 }
 
-.votes .list>div {
-    border-right: 1px solid var(--darker);
+.votes .list > div {
+  border-right: 1px solid var(--darker);
 }
 
 a.username.user-gold {
-    color: #e8b622;
+  color: #e8b622;
 }
 
 a.username.user-moderator,
 a.username.user-admin {
-    color: #4caf50;
+  color: #4caf50;
 }
-
 
 /*===== Navbar =====*/
 
 .navbar.is-primary {
-    background-color: var(--thread-bg);
-    padding: 0px;
+  background-color: var(--thread-bg);
+  padding: 0px;
 }
 
-.navbar-brand>a.navbar-item:hover {
-    background-color: var(--accent);
+.navbar-brand > a.navbar-item:hover {
+  background-color: var(--accent);
 }
-
 
 /*===== Footer =====*/
 
 .footer {
-    background-color: var(--thread-bg);
+  background-color: var(--thread-bg);
 }
-
 
 /*===== New Post ===== */
 
 .ql-container,
 .ql-container.ql-snow {
-    border: 1px dotted rgba(255, 255, 255, 0.3);
+  border: 1px dotted rgba(255, 255, 255, 0.3);
 }
-
 
 /*===== New Post Tools (bold/italics etc.) ===== */
 
 .ql-toolbar.ql-snow.toolbar button i {
-    color: var(--text-dim-color);
+  color: var(--text-dim-color);
 }
 
-
 /*===== Post Content Styling ===== */
-
 
 /*===== Post links ===== */
 
 .ql-container.ql-snow a {
-    color: var(--accent);
+  color: var(--accent);
 }
-
 
 /*===== Username @mentions ===== */
 
 .ql-container.ql-snow mention a {
-    color: var(--darker);
+  color: var(--darker);
 }
 
 p mention {
-    background: var(--accent);
-    border-radius: 4px;
-    margin-right: 2px;
+  background: var(--accent);
+  border-radius: 4px;
+  margin-right: 2px;
 }
-
 
 /* on hover, use a brighter version of --accent */
 
 .ql-container.ql-snow mention a:hover {
-    background: var(--accent-brighter);
+  background: var(--accent-brighter);
 }
-
 
 /* commits page */
 
 #content .tabs {
-    background-color: var(--thread-bg2);
+  background-color: var(--thread-bg2);
+}
+
+/* ------------------------- */
+
+/* make bold links stand out */
+
+.ql-editor a > strong {
+  color: var(--accent-brighter);
 }
