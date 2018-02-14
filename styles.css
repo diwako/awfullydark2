@@ -582,3 +582,8 @@ p mention {
 .ql-editor a > strong {
   color: var(--accent-brighter);
 }
+
+/* fix mention color */
+.ql-container.ql-snow .ql-editor a {
+    color: #ffffff;
+}
