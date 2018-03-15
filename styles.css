@@ -365,12 +365,13 @@ body.page-forum .forumpanel {
 .postrender .postinner>.postuser .background-image:before,
 .postrender .postinner>.postuser .background-image:after {
     opacity: 1;
-    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.71) 43%,#303030 512px);
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.71) 420px,#303030 512px);
 }
 
 .postrender .postinner>.postuser .background-image{
     background-repeat: no-repeat;
     overflow: hidden;
+    background-color: var(--thread-bg);
 }
 
 .ql-toolbar.ql-snow.toolbar button {
