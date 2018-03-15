@@ -411,10 +411,12 @@ body.page-forum .forumpanel {
 }
 
 .username.user-gold a{
-    color: var(--gold);     
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.251);
+    color: var(--gold);        
 } 
+.username a{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.251);
 }
+
 
 .dialog.modal.is-active .modal-card-body {
     background-color:  var(--thread-bg);
