@@ -365,7 +365,10 @@ body.page-forum .forumpanel {
 .postrender .postinner>.postuser .background-image:before,
 .postrender .postinner>.postuser .background-image:after {
     opacity: 0.75;
-    background: var(--darker);
+    background: linear-gradient(to bottom, rgba(230,230,230,0), var(--darker) 512px);    
+}
+.postblock-read .postrender .postinner>.postuser .background-image{
+    background-repeat: no-repeat;
 }
 
 .ql-toolbar.ql-snow.toolbar button {
