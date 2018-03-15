@@ -396,13 +396,13 @@ body.page-forum .forumpanel {
     color: var(--text-dim-color);
 }
 
-.container .coinshopbody .box {
+.page-forum.usershop .coinshopbody .box {
     border: 1px solid var(--text);
     background-color: var(--darker);
     color: var(--text);
 }
 
-.container .coinshopbody button{
+.page-forum.usershop .coinshopbody button{
     background: var(--gold);
 }
 
