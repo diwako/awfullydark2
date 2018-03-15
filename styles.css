@@ -370,3 +370,7 @@ body.page-forum .forumpanel {
 .ql-toolbar.ql-snow.toolbar button {
     color: var(--text-dim-color);
 }
+
+.ql-editor strong {
+    color: inherit;
+}
