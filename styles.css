@@ -291,3 +291,82 @@ body.page-forum .threadlistsection .threadblock .threadmain .threadtitle .thread
 #wrapper #content .threadlist .threadblock:hover .threadlastpost {
     background: var(--thread-bg-read);
 }
+
+
+/*===== Threads View =====*/
+
+.title {
+    color: var(--text-color);
+}
+
+.lastread {
+    background: var(--accent);
+    color: var(--text-color);
+    border-color: var(--darker);
+}
+
+body.page-forum .forumpanel {
+    background: var(--thread-bg);
+}
+
+.postrender .posthead,
+.postrender .posthead a,
+.postrender .posthead strong {
+    background: var(--thread-bg);
+    color: var(--text-dim-color);
+}
+
+#wrapper #content .postlist .forumpanel>.postmain .posthead,
+.pagnation.postpagnation.above,
+#wrapper #content .postlist .forumpanel,
+.postrender .postinner>.postuser,
+.pagnation.postpagnation.below {
+    border-color: var(--darker);
+}
+
+.postrender .postinner>.postuser.has-background-image:hover .background-image:after {
+    opacity: 0.1;
+}
+
+.postblock.postblock-read .postcontent,
+.postblock .postcontent,
+.threadreply .actions {
+    background: var(--thread-bg);
+    border-color: var(--darker);
+}
+
+.ql-editor {
+    color: var(--text-dim-color);
+}
+
+.ql-container.ql-snow .ql-editor h1,
+.ql-container.ql-snow .ql-editor h2,
+.ql-container.ql-snow .ql-editor h3,
+.ql-container.ql-snow .ql-editor h4,
+.ql-container.ql-snow .ql-editor h5,
+.ql-container.ql-snow .ql-editor h6,
+.ql-container.ql-snow .ql-editor h7,
+.ql-container.ql-snow .ql-editor p {
+    color: var(--text-color);
+}
+
+.ql-container.ql-snow .ql-editor a {
+    color: var(--accent);
+}
+
+.votes.detail {
+    background: var(--thread-bg);
+    border-color: var(--darker);
+}
+
+.postblock-read .postrender .postinner>.postuser .background-image:before,
+.postblock-read .postrender .postinner>.postuser .background-image:after,
+.postrender .postinner>.postuser .background-image:before,
+.postrender .postinner>.postuser .background-image:after {
+    opacity: 0.75;
+    background: var(--darker);
+}
+
+.ql-toolbar.ql-snow.toolbar button {
+    color: var(--text-dim-color);
+}
