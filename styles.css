@@ -411,9 +411,14 @@ body.page-forum .forumpanel {
     color: var(--gold);
 }
 
+.username.user-moderator.username.user-moderator a, .username.user-admin.username.user-admin a {
+    color: #58b958;
+}
+
 .username.user-gold a{
     color: var(--gold);        
 } 
+
 .username a{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.251);
 }
