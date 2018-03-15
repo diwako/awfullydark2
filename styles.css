@@ -365,7 +365,7 @@ body.page-forum .forumpanel {
 .postrender .postinner>.postuser .background-image:before,
 .postrender .postinner>.postuser .background-image:after {
     opacity: 1;
-    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.67) 43%,#303030 512px);
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.71) 43%,#303030 512px);
 }
 
 .postrender .postinner>.postuser .background-image{
@@ -411,7 +411,9 @@ body.page-forum .forumpanel {
 }
 
 .username.user-gold a{
-    color: var(--gold);   
+    color: var(--gold);     
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.251);
+} 
 }
 
 .dialog.modal.is-active .modal-card-body {
