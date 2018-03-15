@@ -11,6 +11,7 @@
     --thread-separator: #202020;
     --text-color: #dadada;
     --text-dim-color: #b3b3b3;
+    --gold: rgba(252, 190, 32, 1);
     /* Backgrounds */
     --darker: #1b1b1b;
 }
@@ -373,4 +374,37 @@ body.page-forum .forumpanel {
 
 .ql-editor strong {
     color: inherit;
+}
+
+.is-dark.hero {
+    background-color: var(--thread-bg);
+    border-bottom: none;
+}
+.is-dark.hero .title {
+    color: var(--text-color);
+}
+
+.hero.is-small .hero-body {
+    background: var(--thread-bg);
+}
+.hero.is-dark .subtitle {
+    color: var(--text-dim-color);
+}
+
+.container .coinshopbody .box {
+    border: 1px solid var(--text);
+    background-color: var(--darker);
+    color: var(--text);
+}
+
+.container .coinshopbody button{
+    background: var(--gold);
+}
+
+.coins{
+    color: var(--gold);
+}
+
+.username.user-gold a{
+    color: var(--gold);   
 }
