@@ -431,8 +431,8 @@ body.page-forum .forumpanel {
     background-repeat: repeat;
     left: 0;
     opacity: 0.2;
-    mix-blend-mode: overlay;
     pointer-events: none;
+    mix-blend-mode: overlay;
 }
 .modal-card-foot:after {
     content: '';
@@ -443,8 +443,8 @@ body.page-forum .forumpanel {
     background-repeat: repeat;
     left: 0;
     opacity: 0.2;
-    mix-blend-mode: overlay;
     pointer-events: none;
+    mix-blend-mode: overlay;
 }
 
 .dialog .modal-card .modal-card-foot .button {
