@@ -462,3 +462,7 @@ body.page-forum .forumpanel {
     background: var(--accent);
     color: var(--darker);
 }
+
+.votes{
+    user-select: text;
+}
