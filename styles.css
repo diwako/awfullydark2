@@ -428,6 +428,7 @@ body.page-forum .forumpanel {
     left: 0;
     opacity: 0.2;
     mix-blend-mode: overlay;
+    pointer-events: none;
 }
 .modal-card-foot:after {
     content: '';
@@ -439,6 +440,7 @@ body.page-forum .forumpanel {
     left: 0;
     opacity: 0.2;
     mix-blend-mode: overlay;
+    pointer-events: none;
 }
 
 .dialog .modal-card .modal-card-foot .button {
