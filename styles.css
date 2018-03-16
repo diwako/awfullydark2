@@ -535,10 +535,21 @@ body.page-forum .forumpanel {
 .commits .change-entry .time a,
 .tabs a,
 .tabs a:hover,
-.commit-months {
+.commit-months,
+.box,
+.hero.is-dark .subtitle strong {
     color: var(--text-color);
 }
 
 .tabs li.is-disabled a {
     color: var(--text-dim-color);
+}
+
+.page-roadmap .columns .column .box {
+    background-color: var(--thread-bg);
+    border: 1px solid var(--darker);
+}
+
+.page-roadmap .columns .column .box.completed {
+    background-color: var(--thread-bg-read);
 }
