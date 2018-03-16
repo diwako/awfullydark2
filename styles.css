@@ -597,7 +597,7 @@ body.page-forum .forumpanel {
 
 .unreadposts {
     background-color: var(--thread-bg-read);
-    color: var(--text-dim-color);
+    color: var(--gold);
     border: none;
     padding: 3px 3px;
 }
