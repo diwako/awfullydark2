@@ -552,8 +552,8 @@ body.page-forum .forumpanel {
 .postuser.has-background-image {
     box-shadow: -1px 0px var(--accent);    
 }
-.postblock-own .postuser.has-background-image {
-    box-shadow: -1px 0px var(--gold);
+.forumpanel.postblock-own .postuser.has-background-image {
+    box-shadow: -1px 0px var(--gold)!important;
 }
 .postblock-read .postuser.has-background-image {
     box-shadow: -1px 0px transparent;
