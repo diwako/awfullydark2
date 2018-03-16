@@ -12,8 +12,8 @@
     --text-color: #dadada;
     --text-dim-color: #b3b3b3;
     --gold: rgba(252, 190, 32, 1);
-    /* Backgrounds */
     --darker: #1b1b1b;
+    --bg-opacity: 0.71;
 }
 
 
@@ -388,8 +388,7 @@ body.page-forum .forumpanel {
 .postblock-read .postrender .postinner>.postuser .background-image:after,
 .postrender .postinner>.postuser .background-image:before,
 .postrender .postinner>.postuser .background-image:after {
-    opacity: 1;
-    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.71) 420px, #303030 512px);
+    background: linear-gradient(to bottom, rgba(48, 48, 48, var(--bg-opacity)) 420px, #303030 512px);
 }
 
 #wrapper #content .pagnation.threadpagnation a.page.is-spacer,
