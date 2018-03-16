@@ -537,7 +537,7 @@ body.page-forum .forumpanel {
 }
 
 #wrapper #content .postlist .postblock .postmain .posthead {
-    box-shadow: inset 450px 0px 500px -500px var(--accent);
+    box-shadow: inset 500px 0px 500px -500px var(--accent);
 }
 
 #wrapper #content .postlist .postblock-read .postmain .posthead {
