@@ -427,7 +427,7 @@ body.page-forum .forumpanel {
     color: var(--text-dim-color);
 }
 
-.ql-editor strong {
+.ql-snow .ql-editor strong {
     color: inherit;
 }
 
