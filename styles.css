@@ -396,6 +396,10 @@ body.page-forum .forumpanel {
     color: var(--accent);
 }
 
+.ql-container.ql-snow .ql-editor postquote .head a {
+    color: var(--text-color);
+}
+
 .votes.detail {
     background: var(--thread-bg);
     border-color: var(--darker);
