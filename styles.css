@@ -463,6 +463,10 @@ body.page-forum .forumpanel {
     color: var(--darker);
 }
 
-.votes{
+.votes {
     user-select: text;
+}
+
+.postuser .user-card {
+    background-color: var(--thread-bg);
 }
