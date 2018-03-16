@@ -536,7 +536,8 @@ body.page-forum .forumpanel {
     background-color: var(--thread-bg);
 }
 
-#wrapper #content .postlist .postblock .postmain .posthead {
+/* gradient read/own post indicators */
+/* #wrapper #content .postlist .postblock .postmain .posthead {
     box-shadow: inset 500px 0px 500px -500px var(--accent);
 }
 
@@ -546,8 +547,17 @@ body.page-forum .forumpanel {
 
 #wrapper #content .postlist .postblock-own .postmain .posthead {
     box-shadow: inset 450px 0px 500px -500px var(--gold);
-}
+} */
 
+.postuser.has-background-image {
+    border-left: 1px solid var(--accent);
+}
+.postblock-own .postuser.has-background-image {
+    border-left: 1px solid var(--gold);
+}
+.postblock-read .postuser.has-background-image {
+    border-left: 1px solid transparent;
+}
 
 /*===== misc =====*/
 
@@ -578,4 +588,16 @@ body.page-forum .forumpanel {
 
 .page-roadmap .columns .column .box.completed {
     background-color: var(--thread-bg-read);
+}
+
+#wrapper #content .threadlist .threadblock .threadmain .pagnationcomponent .page {
+    color: var(--thread-bg);
+    background-color: var(--text-dim-color);
+}
+
+.unreadposts {
+    background-color: var(--thread-bg-read);
+    color: var(--text-dim-color);
+    border: none;
+    padding: 3px 3px;
 }
