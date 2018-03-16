@@ -133,13 +133,34 @@ strong {
 .dropdown-item,
 .dropdown .dropdown-menu .has-link a {
     color: var(--text-color) !important;
-    background-color: var(--darker);
+    background-color: var(--thread-bg);
 }
 
 a.dropdown-item:hover,
 .dropdown .dropdown-menu .has-link a:hover {
     background: var(--accent);
     color: var(--text-color);
+}
+
+.alert-component .dropdown-item .alert-dropdown .alert-item.alert-seen>a,
+.alert-component .dropdown .dropdown-menu .has-link a .alert-dropdown .alert-item.alert-seen>a,
+.dropdown .dropdown-menu .has-link .alert-component a .alert-dropdown .alert-item.alert-seen>a,
+.alert-component .dropdown-item .alert-dropdown .alert-item>a,
+.alert-component .dropdown .dropdown-menu .has-link a .alert-dropdown .alert-item>a,
+.dropdown .dropdown-menu .has-link .alert-component a .alert-dropdown .alert-item>a,
+.alert-component .dropdown-item .alert-header .title,
+.alert-component .dropdown .dropdown-menu .has-link a .alert-header .title,
+.dropdown .dropdown-menu .has-link .alert-component a .alert-header .title,
+.alert-component .dropdown-item .alert-header .controls,
+.alert-component .dropdown .dropdown-menu .has-link a .alert-header .controls,
+.dropdown .dropdown-menu .has-link .alert-component a .alert-header .controls {
+    color: var(--text-color);
+}
+
+.alert-component .dropdown-item .alert-dropdown .alert-item.alert-seen,
+.alert-component .dropdown .dropdown-menu .has-link a .alert-dropdown .alert-item.alert-seen,
+.dropdown .dropdown-menu .has-link .alert-component a .alert-dropdown .alert-item.alert-seen {
+    background: var(--darker);
 }
 
 
