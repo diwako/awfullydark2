@@ -227,6 +227,12 @@ body.page-forum .forumblock .postcount .label {
     color: var(--text-dim-color);
 }
 
+.dropdown-content a.dropdown-item,
+.dropdown-content .dropdown .dropdown-menu .has-link a,
+.dropdown .dropdown-menu .has-link .dropdown-content a {
+    color: var(--text-color) !important;
+}
+
 
 /*===== Sub Forum View =====*/
 
