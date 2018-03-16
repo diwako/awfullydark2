@@ -541,7 +541,8 @@ body.page-forum .forumpanel {
     color: var(--text-color);
 }
 
-.tabs li.is-disabled a {
+.tabs li.is-disabled a,
+.roadmap .column .roadmap-child .title {
     color: var(--text-dim-color);
 }
 
