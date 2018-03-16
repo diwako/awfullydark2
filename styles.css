@@ -294,6 +294,25 @@ body.page-forum .threadlistsection .threadblock .threadmain .threadtitle .thread
 }
 
 
+/* == stickies == */
+
+#wrapper #content .threadlist .threadblock.is-sticky,
+#wrapper #content .threadlist .threadblock.is-sticky:hover {
+    background: var(--thread-bg-sticky);
+    color: var(--text-color);
+    border-color: var(--darker);
+}
+
+#wrapper #content .threadlist .threadblock.is-sticky a,
+#wrapper #content .threadlist .threadblock.is-sticky .threadtitle .threadname,
+#wrapper #content .threadlist .threadblock.is-sticky .threadage,
+#wrapper #content .threadlist .threadblock.is-sticky .postcount {
+    color: var(--text-color) !important;
+    border-color: var(--darker);
+    background: var(--thread-bg-sticky);
+}
+
+
 /*===== Threads View =====*/
 
 .title {
@@ -336,7 +355,8 @@ body.page-forum .forumpanel {
     border-color: var(--darker);
 }
 
-.ql-editor {
+.ql-editor,
+.ql-snow .ql-editor {
     color: var(--text-dim-color);
 }
 
@@ -360,15 +380,24 @@ body.page-forum .forumpanel {
     border-color: var(--darker);
 }
 
+.ql-container.ql-snow {
+    border-color: var(--darker);
+}
+
 .postblock-read .postrender .postinner>.postuser .background-image:before,
 .postblock-read .postrender .postinner>.postuser .background-image:after,
 .postrender .postinner>.postuser .background-image:before,
 .postrender .postinner>.postuser .background-image:after {
     opacity: 1;
-    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.71) 420px,#303030 512px);
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.71) 420px, #303030 512px);
 }
 
-.postrender .postinner>.postuser .background-image{
+#wrapper #content .pagnation.threadpagnation a.page.is-spacer,
+#wrapper #content .pagnation.postpagnation a.page.is-spacer {
+    background: var(--thread-bg-sticky);
+}
+
+.postrender .postinner>.postuser .background-image {
     background-repeat: no-repeat;
     overflow: hidden;
     background-color: var(--thread-bg);
@@ -386,6 +415,7 @@ body.page-forum .forumpanel {
     background-color: var(--thread-bg);
     border-bottom: none;
 }
+
 .is-dark.hero .title {
     color: var(--text-color);
 }
@@ -393,6 +423,7 @@ body.page-forum .forumpanel {
 .hero.is-small .hero-body {
     background: var(--thread-bg);
 }
+
 .hero.is-dark .subtitle {
     color: var(--text-dim-color);
 }
@@ -403,32 +434,32 @@ body.page-forum .forumpanel {
     color: var(--text);
 }
 
-.page-forum.usershop .coinshopbody button{
+.page-forum.usershop .coinshopbody button {
     background: var(--gold);
 }
 
-.coins{
+.coins {
     color: var(--gold);
 }
 
-.username.user-moderator.username.user-moderator a, .username.user-admin.username.user-admin a {
+.username.user-moderator.username.user-moderator a,
+.username.user-admin.username.user-admin a {
     color: #58b958;
 }
 
-.username.user-gold a{
-    color: var(--gold);        
-} 
+.username.user-gold a {
+    color: var(--gold);
+}
 
-.username a{
+.username a {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.251);
 }
 
-
 .dialog.modal.is-active .modal-card-body {
-    background-color:  var(--thread-bg);
+    background-color: var(--thread-bg);
 }
 
-.modal-card-head:after{
+.modal-card-head:after {
     content: '';
     width: 100%;
     height: 100%;
@@ -440,6 +471,7 @@ body.page-forum .forumpanel {
     pointer-events: none;
     mix-blend-mode: overlay;
 }
+
 .modal-card-foot:after {
     content: '';
     width: 100%;
@@ -463,6 +495,6 @@ body.page-forum .forumpanel {
     color: var(--darker);
 }
 
-.votes{
+.votes {
     user-select: text;
 }
