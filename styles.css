@@ -550,13 +550,13 @@ body.page-forum .forumpanel {
 } */
 
 .postuser.has-background-image {
-    border-left: 1px solid var(--accent);
+    box-shadow: -1px 0px var(--accent);    
 }
 .postblock-own .postuser.has-background-image {
-    border-left: 1px solid var(--gold);
+    box-shadow: -1px 0px var(--gold);
 }
 .postblock-read .postuser.has-background-image {
-    border-left: 1px solid transparent;
+    box-shadow: -1px 0px transparent;
 }
 
 /*===== misc =====*/
