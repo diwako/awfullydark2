@@ -356,10 +356,13 @@ body.page-forum .forumpanel {
     background: var(--thread-bg);
 }
 
-.postrender .posthead,
+.postrender .posthead {
+    background: var(--thread-bg);
+    color: var(--text-dim-color);
+}
+
 .postrender .posthead a,
 .postrender .posthead strong {
-    background: var(--thread-bg);
     color: var(--text-dim-color);
 }
 
@@ -531,6 +534,18 @@ body.page-forum .forumpanel {
 
 .postuser .user-card {
     background-color: var(--thread-bg);
+}
+
+#wrapper #content .postlist .postblock .postmain .posthead {
+    box-shadow: inset 450px 0px 500px -500px var(--accent);
+}
+
+#wrapper #content .postlist .postblock-read .postmain .posthead {
+    box-shadow: inset 0 0 0 0 var(--accent);
+}
+
+#wrapper #content .postlist .postblock-own .postmain .posthead {
+    box-shadow: inset 450px 0px 500px -500px var(--gold);
 }
 
 
