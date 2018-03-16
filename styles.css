@@ -498,3 +498,7 @@ body.page-forum .forumpanel {
 .votes {
     user-select: text;
 }
+
+.postuser .user-card {
+    background-color: var(--thread-bg);
+}
