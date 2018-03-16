@@ -522,3 +522,23 @@ body.page-forum .forumpanel {
 .postuser .user-card {
     background-color: var(--thread-bg);
 }
+
+
+/*===== misc =====*/
+
+#wrapper #content,
+.commit-years,
+.commit-months {
+    background: var(--thread-bg);
+}
+
+.commits .change-entry .time a,
+.tabs a,
+.tabs a:hover,
+.commit-months {
+    color: var(--text-color);
+}
+
+.tabs li.is-disabled a {
+    color: var(--text-dim-color);
+}
