@@ -536,7 +536,10 @@ body.page-forum .forumpanel {
     background-color: var(--thread-bg);
 }
 
+
 /* gradient read/own post indicators */
+
+
 /* #wrapper #content .postlist .postblock .postmain .posthead {
     box-shadow: inset 500px 0px 500px -500px var(--accent);
 }
@@ -549,15 +552,18 @@ body.page-forum .forumpanel {
     box-shadow: inset 450px 0px 500px -500px var(--gold);
 } */
 
-.postuser.has-background-image {
-    box-shadow: -1px 0px var(--accent);    
+#wrapper #content .postlist .postblock .postmain .postinner .postuser .background-image:after {
+    box-shadow: inset 2px 0px 0px -1px var(--accent);
 }
-.forumpanel.postblock-own .postuser.has-background-image {
-    box-shadow: -1px 0px var(--gold)!important;
+
+#wrapper #content .postlist .postblock-read .postmain .postinner .postuser .background-image:after {
+    box-shadow: inset 0 0 0 0 var(--accent);
 }
-.postblock-read .postuser.has-background-image {
-    box-shadow: -1px 0px transparent;
+
+#wrapper #content .postlist .postblock-own .postmain .postinner .postuser .background-image:after {
+    box-shadow: inset 2px 0px 0px -1px var(--gold);
 }
+
 
 /*===== misc =====*/
 
