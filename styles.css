@@ -23,6 +23,10 @@ html {
     /*background: var(--darker);*/
 }
 
+#header .navbar-main.navbar.is-dark .navbar-brand .navbar-item.logo {
+    background-image: url(https://i.imgur.com/BDWqHAe.png);
+}
+
 #forum {
     background: var(--thread-bg);
 }
