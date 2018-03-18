@@ -422,7 +422,7 @@ body.page-forum .forumpanel {
 .postblock-read .postrender .postinner>.postuser .background-image:after,
 .postrender .postinner>.postuser .background-image:before,
 .postrender .postinner>.postuser .background-image:after {
-    background: linear-gradient(to bottom, rgba(48, 48, 48, var(--bg-opacity)) 420px, #303030 512px);
+    background: linear-gradient(to bottom, rgba(48, 48, 48, var(--bg-opacity)) 350px, #303030 460px);
 }
 
 #wrapper #content .pagnation.threadpagnation a.page.is-spacer,
