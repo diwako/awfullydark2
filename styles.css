@@ -611,3 +611,7 @@ body.page-forum .forumpanel {
     border: none;
     padding: 3px 3px;
 }
+
+.forumevents span.timeago {
+    color: var(--text-color);
+}
