@@ -19,6 +19,10 @@
 
 /*===== General =====*/
 
+html::before {
+   background-image: url(https://files.facepunch.com/forum/upload/185984/ba574c82-b372-4774-9a58-a1a1a848f3a7/tf_loghouse_alpine_2560.png);
+}
+
 html {
     /*background: var(--darker);*/
 }
