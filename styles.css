@@ -268,7 +268,11 @@ body.page-forum .forumblock .postcount .label {
 }
 
 #wrapper #content .pagnation.threadpagnation a.page.is-active,
-#wrapper #content .pagnation.postpagnation a.page.is-active,
+#wrapper #content .pagnation.postpagnation a.page.is-active {
+    color: var(--text-color);
+    background: var(--darker);
+}
+
 #wrapper #content .pagnation.threadpagnation a.page:hover,
 #wrapper #content .pagnation.postpagnation a.page:hover {
     background: var(--accent);
@@ -364,7 +368,7 @@ body.page-forum .threadlistsection .threadblock .threadmain .threadtitle .thread
 }
 
 .lastread {
-    background: var(--accent);
+    background: var(--thread-bg-sticky);
     color: var(--text-color);
     border-color: var(--darker);
 }
@@ -501,6 +505,14 @@ body.page-forum .forumpanel {
     color: var(--gold);
 }
 
+.username.user-banned a {
+    color: #a11;
+}
+
+.postblock .baninfo {
+    background-color: #a11;
+}
+
 .username a {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.251);
 }
@@ -579,6 +591,15 @@ body.page-forum .forumpanel {
 
 #wrapper #content .postlist .postblock-own .postmain .postinner .postuser .background-image:after {
     box-shadow: inset 2px 0px 0px -1px var(--gold);
+}
+
+.ql-container.ql-snow .ql-editor postquote .head {
+    background-color: var(--thread-bg-sticky);
+}
+
+.ql-container.ql-snow .ql-editor postquote {
+    border: 1px solid var(--darker);
+    background-color: rgba(130, 130, 130, 0.2);
 }
 
 
