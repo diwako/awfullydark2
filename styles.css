@@ -603,6 +603,23 @@ body.page-forum .forumpanel {
 }
 
 
+/* = Blogposts = */
+
+.threadlist-blog .threadblog {
+    border-color: var(--darker);
+}
+
+.threadlist-blog .threadblog .threadblog-header {
+    background-color: var(--thread-bg-sticky);
+    border-color: var(--darker);
+}
+
+.threadlist-blog .threadblog .threadblog-header .subtitle,
+.threadlist-blog .threadblog .threadblog-header .title a {
+    color: var(--text-color);
+}
+
+
 /*===== misc =====*/
 
 #wrapper #content,
