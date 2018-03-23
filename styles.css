@@ -20,7 +20,7 @@
 /*===== General =====*/
 
 html::before {
-   background-image: url(https://files.facepunch.com/forum/upload/185984/ba574c82-b372-4774-9a58-a1a1a848f3a7/tf_loghouse_alpine_2560.png);
+    background-image: url(https://files.facepunch.com/forum/upload/185984/ba574c82-b372-4774-9a58-a1a1a848f3a7/tf_loghouse_alpine_2560.png);
 }
 
 html {
@@ -173,6 +173,15 @@ a.dropdown-item:hover,
 
 
 /*===== Main Page =====*/
+
+#wrapper #content .section:nth-of-type(2) {
+    background: var(--darker);
+}
+
+#wrapper #content .forumcategoryblock {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
 
 #wrapper #content .forumcategoryblock .forumcategoryheader {
     background: var(--thread-bg-sticky);
