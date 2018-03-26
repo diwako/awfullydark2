@@ -602,6 +602,10 @@ body.page-forum .forumpanel {
     background-color: rgba(130, 130, 130, 0.2);
 }
 
+.postblock .postmain .postexpand.expandable-overflown:after {
+    background: var(--thread-bg-sticky);
+}
+
 
 /* = Blogposts = */
 
