@@ -1,16 +1,16 @@
-.drawer-container>.drawer {
-    min-width: 30px;
-    flex-basis: 30px;
-    transition: 0.5s;
-    overflow: hidden;
-    opacity: 0.25;
-}
-
-.drawer-container>.drawer:hover {
-    flex-basis: 250px;
-    opacity: 1;
-}
-
-.drawer-container>.drawer>.drawer-section {
-    min-width: 250px;
+@media screen and (min-width: 1280px) {
+    .drawer-container>.drawer {
+        min-width: 30px;
+        flex-basis: 30px;
+        transition: 0.5s;
+        overflow: hidden;
+        opacity: 0.25;
+    }
+    .drawer-container>.drawer:hover {
+        flex-basis: 250px;
+        opacity: 1;
+    }
+    .drawer-container>.drawer>.drawer-section {
+        min-width: 250px;
+    }
 }
