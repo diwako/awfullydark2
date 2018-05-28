@@ -84,31 +84,31 @@ strong {
     border-color: var(--accent-text);
 }
 
-.drawer-container>.drawer {
+#drawerleft {
     background: var(--darker);
     border-right: 1px solid var(--darker);
 }
 
-.drawer-container>.drawer>.drawer-section {
+#drawerleft>.drawer-section {
     background: var(--thread-bg);
     color: var(--text-color);
 }
 
-.drawer-container>.drawer>.drawer-section>.drawer-head {
+#drawerleft>.drawer-section>.drawer-head {
     color: var(--text-color);
 }
 
-.drawer-container>.drawer>.drawer-section>.drawer-content {
+#drawerleft>.drawer-section>.drawer-content {
     border-color: var(--darker);
-    background: var(--thread-bg);
+    background-color: var(--thread-bg);
 }
 
 #wrapper #content {
     border-color: var(--darker);
 }
 
-.drawer-container>.drawer>.drawer-section>.drawer-content .forumevent .timeago {
-    background: var(--thread-bg-sticky);
+#drawerleft>.drawer-section>.drawer-content .forumevent .timeago {
+    background-color: var(--thread-bg-sticky);
 }
 
 .button.is-primary {
@@ -121,8 +121,8 @@ strong {
     color: var(--text-color);
 }
 
-.drawer-container>.drawer>.drawer-section>.drawer-content .thread>.meta,
-.drawer-container>.drawer>.drawer-section>.drawer-content .thread>.meta a {
+#drawerleft>.drawer-section>.drawer-content .thread>.meta,
+#drawerleft>.drawer-section>.drawer-content .thread>.meta a {
     color: var(--text-dim-color);
 }
 
