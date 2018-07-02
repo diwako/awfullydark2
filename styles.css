@@ -398,8 +398,16 @@ body.page-forum .forumpanel {
 }
 
 .postrender .posthead a,
-.postrender .posthead strong {
+.postrender .posthead strong,
+.postrender .posthead .meta,
+.postrender .posthead .meta a,
+.postrender .posthead .meta strong,
+.postrender .posthead .postmodtools .dropdown-trigger a i {
   color: var(--text-dim-color);
+}
+
+.postrender .posthead .postmodtools .dropdown-trigger {
+  border-color: var(--darker);
 }
 
 #wrapper #content .postlist .forumpanel>.postmain .posthead,
