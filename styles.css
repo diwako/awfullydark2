@@ -721,3 +721,22 @@ body.page-forum .threadlistsection .threadblock li.viewedcount,
 #wrapper #content .threadlist .threadblock.is-sticky .threadlastpost {
   border-color: var(--darker);
 }
+
+/*===== mod =====*/
+.moderate td, .moderate table.table {
+  background-color: var(--darker);
+  border: none;
+}
+
+.moderate table.table thead {
+  color: var(--text-dim-color) ;
+  background-color: var(--thread-separator);
+}
+
+.moderate table.table tbody tr:first-of-type td:nth-child(-n +2) {
+  border-right: 1px solid #303030;
+}
+
+.moderate div[id^="ReportForPost"] {
+  box-shadow: 0px 1px 2px 1px #2b2b2b;
+}
