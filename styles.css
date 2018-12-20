@@ -787,6 +787,23 @@ body.page-forum .threadlistsection .threadblock li.viewedcount,
   border-color: var(--darker);
 }
 
+/*===== search =====*/
+#search_results .menu .menu-list {
+  background-color: var(--thread-bg);
+}
+#search_results .menu .menu-list a {
+  color: var(--text-color);
+}
+#search_results .menu .menu-label,
+.page-search .columns .column.is-4 {
+  background-color: var(--darker);
+  color: var(--text-color);
+}
+
+.button.is-info {
+  background-color: var(--accent);
+}
+
 /*===== mod =====*/
 .moderate td,
 .moderate table.table {
